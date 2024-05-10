@@ -1,0 +1,19 @@
+{
+  "author": "",
+  "description": "",
+  "devDependencies": {
+    "@extism/js-pdk": "^1.0.1",
+    "esbuild": "^0.21.1",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "test-plugin",
+  "scripts": {
+    "build": "tsc --noEmit && node esbuild.js && extism-js dist/index.js -i src/index.d.ts -o dist/plugin.wasm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

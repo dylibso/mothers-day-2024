@@ -1,0 +1,10 @@
+app_id = "app_01hxd2tapaeggrbnqy8cd85b37"
+
+# This is where 'xtp plugin push' expects to find the wasm file after the build script has run.
+bin = "dist/plugin.wasm"
+extension_point_ids = ["ext_01hxd47f89fv1sakk20bf0ve4t"]
+
+[scripts]
+
+# xtp plugin build runs this script to generate the wasm file
+build = "npm run build"
